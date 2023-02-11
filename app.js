@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', apiRoute);
 
-//app.use(notFound);
-//app.use(errorHandlerMiddleware);
+app.use(notFound);
+app.use(errorHandlerMiddleware);
 
 
 const port = process.env.PORT || 3000;
